@@ -84,14 +84,14 @@ static int __init procfs2_init(void)
 		return -ENOMEM;
 	}
 
-	pr_info("/proc%s created\n", PROCFS_NAME);
+	pr_info("/proc/%s created\n", PROCFS_NAME);
 	return 0;
 }
 
 static void __exit procfs2_exit(void)
 {
 	proc_remove(our_proc_file);
-	pr_info("/proc%s removed\n", PROCFS_NAME);
+	pr_info("/proc/%s removed\n", PROCFS_NAME);
 }
 
 module_init(procfs2_init);
