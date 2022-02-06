@@ -1,4 +1,4 @@
-obj-m += proc-hello-world.o
+obj-m += procfs1.o
 
 PWD := $(CURDIR)
 
